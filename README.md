@@ -2,6 +2,10 @@
 
 Migration from React 16/Create React App to Next.js App Router is in progress. The application includes a Persian/RTL landing page, storefront/product routes, and a clearly labeled sample catalog with search, price filters, sorting, and local cart/wishlist. Checkout drafts, a guest information form, and gated tracking/invoice routes are implemented; real payment and order access still require backend validation. See [PLAN.md](PLAN.md), [RFP.md](RFP.md), [migration status](docs/MIGRATION.md), and [operations instructions](docs/OPERATIONS.md).
 
+## Storefront preview
+
+![Persian storefront preview showing search and price filters, cart and wishlist controls, and three sample products](docs/storefront-preview.png)
+
 ## Development
 
 Use Node.js 24 and npm. Install with `npm ci`, copy `.env.example` to `.env.local`, and run `npm run dev`. The backend URL is server-only. Open `/preview/store` for the sample catalog, or enter a real store code on the homepage. Set a random server-only `CHECKOUT_DRAFT_SECRET` (at least 32 characters) to enable drafts. No live payment integration is enabled. Keep `ORDER_LOOKUP_ENABLED=false` until authorization, rate limits, and backend contracts are verified.
